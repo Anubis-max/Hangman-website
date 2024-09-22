@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-child">
+            <div class="text">
+                <p id="text-child"></p>
+            </div>
+            <div class="text-hangman">
+                <div class="keyboard">
+                    <input type="button" onclick="checkletter('a'); this.disabled = true" value="a" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('b'); this.disabled = true" value="b" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('c'); this.disabled = true" value="c" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('d'); this.disabled = true" value="d" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('e'); this.disabled = true" value="e" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('f'); this.disabled = true" value="f" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('g'); this.disabled = true" value="g" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('h'); this.disabled = true" value="h" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('i'); this.disabled = true" value="i" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('j'); this.disabled = true" value="j" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('k'); this.disabled = true" value="k" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('l'); this.disabled = true" value="l" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('m'); this.disabled = true" value="m" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('n'); this.disabled = true" value="n" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('o'); this.disabled = true" value="o" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('p'); this.disabled = true" value="p" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('q'); this.disabled = true" value="q" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('r'); this.disabled = true" value="r" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('s'); this.disabled = true" value="s" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('t'); this.disabled = true" value="t" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('u'); this.disabled = true" value="u" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('v'); this.disabled = true" value="v" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('w'); this.disabled = true" value="w" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('x'); this.disabled = true" value="x" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('y'); this.disabled = true" value="y" class="keyboard-child" />
+                    <input type="button" onclick="checkletter('z'); this.disabled = true" value="z" class="keyboard-child" />
+                </div>
+                <div class="hangman">
+                    <div class="hangman-child">
+                        <div id="ground"></div>       
+                        <div id="vertical-beam"></div>  
+                        <div id="horizontal-beam"></div> 
+                        <div id="rope"></div>          
+                        <div id="head"></div>          
+                        <div id="body"></div>          
+                        <div id="left-arm"></div>      
+                        <div id="right-arm"></div>     
+                        <div id="left-leg"></div>      
+                        <div id="right-leg"></div>     
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div id="lost-window">
+        <p class="lost-window-child">You have lost!</p>
+        <p id="answer"></p>
+        <button class="button-9" onclick="refresh()">Try Again</button>
+    </div>
+    <div id="win-window">
+        <p class="lost-window-child">You have Win!</p>
+        <button class="button-9" onclick="refresh()">Try Again</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
